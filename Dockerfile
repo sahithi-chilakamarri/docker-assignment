@@ -1,3 +1,4 @@
+//Layers downloaded to build the image
 FROM java:8-jre
 COPY ./target/muzix-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
