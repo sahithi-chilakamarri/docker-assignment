@@ -19,8 +19,6 @@ import javax.persistence.*;
 public class Muzix{
     @Id
     private int trackId;
-    @Column
     private String trackName;
-    @Column
     private String comments;
 }

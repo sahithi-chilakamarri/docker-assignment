@@ -29,10 +29,6 @@ public class MuzixServiceImpl implements MuzixService {
     //Saving the track to the database
     @Override
     public Muzix saveTrack(Muzix muzix) throws TrackAlreadyExistsException {
-        if(muzixRepository.existsById(muzix.getTrackId()))
-        {
-            throw new TrackAlreadyExistsException("Track already exists");
-        }
         return muzixRepository.save(muzix);
     }
     //Retrieving all the tracks from the database
